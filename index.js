@@ -24,7 +24,7 @@ module.exports = {
       });
     });
   },
-  accountBlockCount: (apiKey, coin, account) => {
+  accountCreate: (apiKey, coin, wallet) => {
     return new Promise((resolve, reject) => {
       const options = {
         method: 'POST',
@@ -33,8 +33,8 @@ module.exports = {
           'x-auth-key': apiKey
         },
         json: {
-          action: 'account_block_count',
-          account: account
+          action: 'account_create',
+          wallet: wallet
         }
       };
     
@@ -47,7 +47,7 @@ module.exports = {
       });
     });
   },
-  accountGet: (apiKey, coin, key) => {
+  send: (apiKey, coin, wallet, source, destination, amount) => {
     return new Promise((resolve, reject) => {
       const options = {
         method: 'POST',
@@ -56,8 +56,11 @@ module.exports = {
           'x-auth-key': apiKey
         },
         json: {
-          action: 'account_get',
-          key: key
+          action: 'send',
+          wallet: wallet,
+          source: source,
+          destination: destination,
+          amount: amount
         }
       };
     

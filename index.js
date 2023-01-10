@@ -27,7 +27,7 @@ exports.account_balance = (account, coin,apiKey) => {
         "action": "account_balance",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -36,7 +36,7 @@ exports.account_block_count = (account, coin, apiKey) => {
         "action": "account_block_count",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -45,7 +45,7 @@ exports.account_get = (key, coin,apiKey) => {
         "action": "account_get",
         "key": key
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -54,7 +54,7 @@ exports.account_info = (account, coin,apiKey) => {
         "action": "account_info",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -63,7 +63,7 @@ exports.account_key = (account, coin, apiKey) => {
         "action": "account_key",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -72,7 +72,7 @@ exports.account_representative = (account, coin,apiKey) => {
         "action": "account_representative",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -81,14 +81,14 @@ exports.block_account = (hash, coin, apiKey) => {
         "action": "block_account",
         "hash": hash
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 exports.block_count = (coin, apiKey) => {
     let data = {
         "action": "block_count"
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -98,7 +98,7 @@ exports.block_info = (hash, json_block, coin, apiKey) => {
         "hash": hash,
         "json_block": json_block
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -107,7 +107,7 @@ exports.delegators_count = (account, coin, apiKey) => {
         "action": "delegators_count",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -117,7 +117,7 @@ exports.receivable = (account, count, coin, apiKey) => {
         "account": account,
         "count": count
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -126,7 +126,7 @@ exports.account_create = (wallet, coin, apiKey) => {
         "action": "account_create",
         "wallet": wallet
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -135,7 +135,7 @@ exports.account_list = (wallet, coin, apiKey) => {
         "action": "account_list",
         "wallet": wallet
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -146,7 +146,7 @@ exports.account_representative_set = (wallet, account, representative, coin, api
         "account": account,
         "representative": representative
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -157,20 +157,20 @@ exports.receive = (wallet, account, block, coin, apiKey) => {
         "account": account,
         "block": block
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
 exports.send = (wallet, source, destination, amount, id, coin, apiKey) => {
     let data = {
-        "action": "send",
+        "action": "senhttps://d",
         "wallet": wallet,
         "source": source,
         "destination": destination,
         "amount": amount,
         "id": id
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -179,7 +179,7 @@ exports.unchecked = (count, coin, apiKey) => {
         "action": "unchecked",
         "count": count
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
 
@@ -188,6 +188,6 @@ exports.validate_account_number = (account, coin, apiKey) => {
         "action": "validate_account_number",
         "account": account
     }
-    let url =`nodes.myecoria.com/${coin}`;
+    let url =`https://nodes.myecoria.com/${coin}`;
     postData(url,data,apiKey);
 }
